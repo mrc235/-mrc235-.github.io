@@ -4,32 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Florida Panhandle Indivisible</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <style>
-        body {
-            background-color: #000000;
+        * {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            box-sizing: border-box;
         }
 
-        header {
-            background-color: #000000;
-            color: #ffffff;
+        body {
+            background-color: #0B131B;
+            color: #FFFFFF;
+            font-family: 'Montserrat', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
             text-align: center;
-            padding: 20px 0;
-            border-bottom: 2px solid #ffffff;
+            padding: 4rem 2rem 2rem;
+            border-bottom: 2px solid #2A3A4F;
+            width: 100%;
         }
 
         h1 {
-            margin: 0;
-            font-size: 2.5em;
-            letter-spacing: 2px;
+            font-size: 2.5rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        .construction-text {
+            font-size: 1.5rem;
+            color: #8A9BA8;
+            margin: 3rem 0;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .contact-footer {
+            position: fixed;
+            bottom: 0;
+            padding: 2rem;
+            background-color: #0B131B;
+            width: 100%;
+            text-align: center;
+            border-top: 2px solid #2A3A4F;
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: #4A90E2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .construction-text {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>FLORIDA PANHANDLE INDIVSIBILE</h1>
     </header>
+
+    <div class="construction-text">
+        COMING SOON: WEBSITE UNDER CONSTRUCTION
+    </div>
+
+    <footer class="contact-footer">
+        FOR IMMEDIATE INQUIRIES, EMAIL <a href="mailto:contact@flpanhandleindivisible.org">CONTACT@FLPANHANDLEINDIVISIBLE.ORG</a>
+    </footer>
 </body>
 </html>
